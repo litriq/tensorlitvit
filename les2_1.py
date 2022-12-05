@@ -1,0 +1,10 @@
+a = input('Введите первое число:')
+b = input('Введите второе число:')
+
+print(f'Сложение: {float(a) + float(b)}')
+print(f'Вычитание: {float(a) - float(b)}')
+print(f'Умножение: {float(a) * float(b)}')
+print(f'Деление: {float(a) / float(b)}')
+print(f'Возведение первого числа в степень второго: {float(a) ** float(b)}')
+print(f'Остаток от деления первого числа на второе: {float(a) % float(b)}')
+print(f'Целая часть от деления на : {float(a) // float(b)}')
