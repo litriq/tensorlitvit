@@ -3,5 +3,7 @@ def fibonacci(n):
         return 1
     return fibonacci(n - 1) + fibonacci(n - 2)
 
-
-print("Число Фибоначчи:", fibonacci(int(input('Введите номер числа Фибоначчи, которое хотите вычислить: '))))
+try:
+    print("Число Фибоначчи:", fibonacci(int(input('Введите номер числа Фибоначчи, которое хотите вычислить: '))))
+except ValueError:
+    print('Фибоначчи работает только с целыми числами.')
