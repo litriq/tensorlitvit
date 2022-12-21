@@ -5,10 +5,10 @@ import cmath
 print('\nНу привет, давай помогу решить тебе квадратное уравнение :-)\n')
 print('Формула квадратного  уравнения: ax^2 + bx + c = 0')
 print('Мне нужны значения a, b и с')
-a = complex(input('a = '))
-b = complex(input('b = '))
-c = complex(input('c = '))
 
+a, b, c = complex(input('a = ')), complex(input('b = ')), complex(input('c = '))
+
+""" Вычисление дикриминанта: """
 discr = b**2 - 4*a*c
 print('Дискриминант D = %s' % discr)
 if a == 0 and b == 0 and c == 0:
