@@ -4,13 +4,13 @@ def func(a, b):
         print('Пароль меньше 6ти символов!')
         b = 1
     x = 'password' in a.lower()
-    if x == True:
+    if x:
         print('Пароль не должен содержать слово "password" в любом регистре!')
         b = 1
-    if a.isalpha() == True:
+    if a.isalpha():
         print('Пароль должен содержать хотя бы 1 цифру!')
         b = 1
-    if a.isdigit() == True:
+    if a.isdigit():
         print('Пароль не должен состоять из цифр!')
         b = 1
     if b == 1:
@@ -18,4 +18,4 @@ def func(a, b):
     elif b == 0:
         return True
 
-print(func(a = input('Введите пароль:'), b=0))
+# print(func('asdqw13QWP', b=0))
