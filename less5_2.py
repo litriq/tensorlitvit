@@ -8,17 +8,22 @@ def func(z = 0, *args):
     Возвращает:
         z - сумму переменных
     """
-    if type(args) == str:
-        z = ''
-    if type(args) == int or type(args) == float:
-        z = 0
-    for num in args:
-        z += num
+    try:
+        if type(args) == str:
+            z = ''
+        if type(args) == int or type(args) == float:
+            z = 0
+        for num in args:
+            z += num
+        return z
+    except TypeError as e:
+        z = e
     return z
 
-func(10,1)
-func(10)
-func(10,0,0,1,1)
-func('Ssq', 'qwa')
-func(1.0011, 314.2)
-func()
+print(func(10,1))
+print(func(10))
+print(func(10,0,0,1,1))
+print(func('Ssq', 'qwa'))
+print(func(1.0011, 314.2))
+print(func())
+print(func('12a', 1))
